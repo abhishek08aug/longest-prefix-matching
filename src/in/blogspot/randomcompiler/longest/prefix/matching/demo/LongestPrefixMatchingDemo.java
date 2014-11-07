@@ -8,12 +8,12 @@ public class LongestPrefixMatchingDemo {
     public static void main(String[] args) {
         Dictionary d = new Dictionary();
         try {
-            d.addWordToDictionary("i");
-            d.addWordToDictionary("in");
-            d.addWordToDictionary("india");
-            d.addWordToDictionary("indian");
-            d.addWordToDictionary("indianized");
-            d.addWordToDictionary("chill");
+            d.addWordToDictionary("are");
+            d.addWordToDictionary("area");
+            d.addWordToDictionary("base");
+            d.addWordToDictionary("cat");
+            d.addWordToDictionary("cater");
+            d.addWordToDictionary("basement");
             d.addWordToDictionary("child");
             d.addWordToDictionary("children");
             d.addWordToDictionary("wild");
@@ -21,8 +21,12 @@ public class LongestPrefixMatchingDemo {
             d.addWordToDictionary("call");
             d.addWordToDictionary("caller");
             
-            System.out.println(d.getLongestMatchingPrefix("calle"));
-            System.out.println(d.getLongestMatchingPrefix("butter"));
+            System.out.println(d.getLongestMatchingPrefix("caterer"));
+            System.out.println(d.getLongestMatchingPrefix("basement"));
+            System.out.println(d.getLongestMatchingPrefix("are"));
+            System.out.println(d.getLongestMatchingPrefix("arex"));
+            System.out.println(d.getLongestMatchingPrefix("basemexz"));
+            System.out.println(d.getLongestMatchingPrefix("xyz"));
         } catch (NullArgumentException e) {
             e.printStackTrace();
         }
